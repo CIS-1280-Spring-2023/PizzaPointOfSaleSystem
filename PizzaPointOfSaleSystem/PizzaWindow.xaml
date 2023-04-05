@@ -1,0 +1,16 @@
+﻿<Window x:Class="PizzaPointOfSaleSystem.PizzaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaPointOfSaleSystem"
+        mc:Ignorable="d"
+        Title="PizzaWindow" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <Label Content="Crust" HorizontalAlignment="Left" Margin="79,69,0,0" VerticalAlignment="Top"/>
+        
+        <Label Content="Size" HorizontalAlignment="Left" Margin="79,100,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbCrust" HorizontalAlignment="Left" Margin="146,69,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbSize" HorizontalAlignment="Left" Margin="146,102,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

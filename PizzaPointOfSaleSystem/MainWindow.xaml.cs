@@ -29,8 +29,16 @@ namespace PizzaPointOfSaleSystem
             InitializeComponent();
             //Get pizzas and add to list box
             pizzas = pizzaRepo.GetAll();
-            lbPizzas.ItemsSource = pizzas;
+            lbPizzas.ItemsSource = pizzas;       
+        }
 
+        private void btnAddPizza_Click(object sender, RoutedEventArgs e)
+        {
+            PizzaWindow pizzaWindow = new PizzaWindow();
+            if(pizzaWindow.ShowDialog()==true)
+            {
+                //TODO: add the pizza
+            }
         }
     }
 }
