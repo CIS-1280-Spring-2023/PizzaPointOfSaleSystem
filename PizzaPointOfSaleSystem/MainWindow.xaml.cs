@@ -23,6 +23,7 @@ namespace PizzaPointOfSaleSystem
         public MainWindow()
         {
             InitializeComponent();
+            //Get pizzas and add to list box
         }
     }
 }
