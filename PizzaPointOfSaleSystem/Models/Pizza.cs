@@ -8,5 +8,10 @@ namespace PizzaPointOfSaleSystem.Models
         public string TypeOfCrust { get; set; }
         public string Size { get; set; }
         public List<Topping> Toppings { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Size} {TypeOfCrust}";
+        }
     }
 }

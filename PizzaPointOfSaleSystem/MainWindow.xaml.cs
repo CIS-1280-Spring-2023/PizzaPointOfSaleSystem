@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PizzaPointOfSaleSystem.Models;
+using PizzaPointOfSaleSystem.Repos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,10 +22,15 @@ namespace PizzaPointOfSaleSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+        PizzaRepo pizzaRepo = new PizzaRepo();
+        List<Pizza> pizzas;
         public MainWindow()
         {
             InitializeComponent();
             //Get pizzas and add to list box
+            pizzas = pizzaRepo.GetAll();
+            lbPizzas.ItemsSource = pizzas;
+
         }
     }
 }
